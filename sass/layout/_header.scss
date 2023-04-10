@@ -1,0 +1,8 @@
+.header {
+    @include flexBox (row, center, space-evenly);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.144);
+    padding: 1rem;
+    &__figure {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,11 @@
+@mixin flexBox ($valor1, $valor2, $valor3) {
+    display: flex;
+    flex-direction: $valor1;
+    align-items: $valor2;
+    justify-content: $valor3;
+}
+
+@mixin button1 {
+    border-radius: 1rem;
+    padding: 1rem;
+}

@@ -1,0 +1,15 @@
+.navbar {
+    @include flexBox (row, center, space-evenly);
+    width: 40%;
+    margin-bottom: 0;
+    &__list {
+        font-size: 1rem;
+        font-weight: 600;
+        &__items {
+            &:hover {
+                    border-bottom: 4px solid $colorPrimary;
+                }
+        }
+        
+    }
+}

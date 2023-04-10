@@ -1,147 +1,117 @@
-@charset "UTF-8";
+@mixin user-select($value) {
+    -webkit-user-select: $value;
+    -moz-user-select: $value;
+    -ms-user-select: $value;
+    user-select: $value;
+}
+
+@mixin line-break($value) {
+    -webkit-line-break: $value;
+    -moz-line-break: $value;
+    -ms-line-break: $value;
+    line-break: $value;
+}
+
 /***
     The new CSS reset - version 1.8.4 (last updated 14.2.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
+
 /*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
     - The "symbol *" part is to solve Firefox SVG sprite bug
  */
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
-  all: unset;
-  display: revert;
+    all: unset;
+    display: revert;
 }
 
 /* Preferred box-sizing value */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Reapply the pointer cursor for anchor tags */
 a,
 button {
-  cursor: revert;
+    cursor: revert;
 }
 
 /* Remove list styles (bullets/numbers) */
 ol,
 ul,
 menu {
-  list-style: none;
+    list-style: none;
 }
 
 /* For images to not be able to exceed their container */
 img {
-  max-inline-size: 100%;
-  max-block-size: 100%;
+    max-inline-size: 100%;
+    max-block-size: 100%;
 }
 
 /* removes spacing between cells in tables */
 table {
-  border-collapse: collapse;
+    border-collapse: collapse;
 }
 
 /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
 input,
 textarea {
-  -webkit-user-select: auto;
-  -moz-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
+    @include user-select(auto)
 }
 
 /* revert the 'white-space' property for textarea elements on Safari */
 textarea {
-  white-space: revert;
+    white-space: revert;
 }
 
 /* minimum style to allow to style meter element */
 meter {
-  -webkit-appearance: revert;
-  appearance: revert;
+    -webkit-appearance: revert;
+    appearance: revert;
 }
 
 /* preformatted text - use only for this feature */
 :where(pre) {
-  all: revert;
+    all: revert;
 }
 
 /* reset default text opacity of input placeholder */
 ::placeholder {
-  color: unset;
+    color: unset;
 }
 
 /* remove default dot (•) sign */
 ::marker {
-  content: initial;
+    content: initial;
 }
 
 /* fix the feature of 'hidden' attribute.
    display:revert; revert to element instead of attribute */
 :where([hidden]) {
-  display: none;
+    display: none;
 }
 
 /* revert for bug in Chromium browsers
    - fix for the content editable attribute will work properly.
    - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
-:where([contenteditable]:not([contenteditable=false])) {
-  -moz-user-modify: read-write;
-  -webkit-user-modify: read-write;
-  overflow-wrap: break-word;
-  -webkit-line-break: after-white-space;
-  -moz-line-break: after-white-space;
-  -ms-line-break: after-white-space;
-  line-break: after-white-space;
-  -webkit-user-select: auto;
-  -moz-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    @include line-break(after-white-space);
+    @include user-select(auto);
 }
 
 /* apply back the draggable feature - exist only in Chromium and Safari */
-:where([draggable=true]) {
-  -webkit-user-drag: element;
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
 }
 
 /* Revert Modal native behavior */
 :where(dialog:modal) {
-  all: revert;
+    all: revert;
 }
-
-.button__login {
-  border-radius: 1rem;
-  padding: 1rem;
-}
-
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.144);
-  padding: 1rem;
-}
-.header__figure {
-  margin-bottom: 0;
-}
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 40%;
-  margin-bottom: 0;
-}
-.navbar__list {
-  font-size: 1rem;
-  font-weight: 600;
-}
-.navbar__list__items:hover {
-  border-bottom: 4px solid #004beb;
-}
-
-/*# sourceMappingURL=style.css.map */
