@@ -1,3 +1,20 @@
 .button__login {
-    @include button1
+   padding: 0.5rem 1rem;
+   text-align: center;
+   border-radius: 0.3rem;
+   font-size: 1rem;
+   font-weight: 600;
+   &--signin {
+    &:hover{
+         color: $colorButton1;
+    }
+
+   }
+   &--getstarted {
+    background-color: $colorButton1;
+    color: white;
+    &:hover {
+        background-color: $colorPrimary;
+    }
+   }
 }
