@@ -11,7 +11,7 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -40,16 +40,43 @@
         <li class="navbar__list__items">Company</li>
     </ul>
     <div class="header__button button__login">
-        <button class=" button__login 
+        <button class=" button button__login 
     button__login--signin">
             Sign in
         </button>
-        <button class=" button__login 
+        <button class="button button__login 
     button__login--getstarted">Get started</button>
     </div>
   </header>
-  <main>
-
+  <main class="container main">
+    <section class="main__section section__hero">
+        <div class="section__hero__textGroup">
+            <div class="section__hero__textGroup--up">
+                <a class="section__hero__textGroup--link" href="#"><span class="section__hero__textGroup__icon"><i class="section__hero__textGroup__icon--bitcoin bi bi-currency-bitcoin"></i></span> Jump start your portfolio <span class="section__hero__textGroup__icon"><i class="section__hero__textGroup__icon--arrow bi bi-arrow-right"></i></span></a>
+            </div>
+            <h1 class="section__hero__textGroup__titel">Jump start your crypto portfolio</h1>
+            <p class="section__hero__textGroup__text">Coinbase is the easiest place to buy and sell cryptocurrency. Sing up and get started today.</p>
+            <form class="section__hero__textGroup__form" action="get">
+                <input class="section__hero__textGroup__form__input" type="email">
+                <button class="button button--hero">Get started</button>
+            </form>
+        </div>
+        <figure class="section__hero__figure">
+            <img class="section__hero__figure__img" src="/assets/img/coinbase_hero.webp" alt="">
+        </figure>
+    </section>
+    <section class="section__web3">
+        <figure class="section__web3__figure">
+            <img class="section__web3__figure__img" src="/assets/img/coinbase_web3.webp" alt="wallet web 3">
+        </figure>
+        <div class="section__web3__textGroup">
+            <h1 class="section__web3__textGroup__title">Explore web3 profiles, and claim one for free</h1>
+            <p class="section__web3__textGroup__text">Create and custimize your web3 profile, check out other profiles, and explore popular NFT collections</p>
+            <div class="section__web3__textGroup__button">
+                <p>Learn more</p> <i class="bi bi-arrow-right"></i>
+            </div>
+        </div>
+    </section>
   </main>
   <footer>
     <!-- place footer here -->
