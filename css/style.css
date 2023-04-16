@@ -138,6 +138,35 @@ meter {
   background-color: #0052FF;
 }
 
+.listGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+.listGroup__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+}
+.listGroup__item:hover {
+  box-shadow: 0.5rem 0.5rem 2rem;
+}
+@media (max-width: 720px) {
+  .listGroup__item {
+    border-radius: 0;
+    border: solid 1px rgba(0, 0, 0, 0.233);
+  }
+}
+.listGroup__coin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .header {
   display: flex;
   flex-direction: row;
