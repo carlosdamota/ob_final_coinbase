@@ -15,6 +15,7 @@
             }
         }
     &--hero {
+        width: 40%;
         padding: 1rem 2rem;
         background-color: $colorPrimary;
         color: white;
@@ -23,4 +24,29 @@
             background-color: $colorButton1;
         }
     }
-}
+    &--buy {
+        background-color: $colorButton4H;
+        color: white;
+        &:hover {
+            background-color: $colorButton4;
+        }
+    }
+    &__web3 {
+        @include flexBox (row,center,space-between);
+        padding: 1rem 2rem;
+        background-color: $buttonWeb3;
+        color: $colorWeb3;
+        border-radius: 4rem;
+        text-decoration: none;
+        width: 15rem;
+
+        &:hover {
+            background-color: $buttonWeb3H;
+            color: $colorWeb3;
+        }
+        @media (max-width:768px) {
+            width: 100%;
+            
+        }
+    }
+}   

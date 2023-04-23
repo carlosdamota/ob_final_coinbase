@@ -1,0 +1,15 @@
+.form {
+    @include flexBox (row,auto,auto);
+    width: 100%;
+}
+.form__input {
+    border: 1px solid black;
+    margin-right: 1rem;
+    border-radius: $b-radius;
+    padding: 1rem 1rem;
+    width: 60%;
+
+    &:focus {
+        border: 3px solid black;
+    }
+}

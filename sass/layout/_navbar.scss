@@ -5,7 +5,7 @@
     &__list {
         font-size: 1rem;
         font-weight: 600;
-        &__items {
+        &--items {
             &:hover {
                     border-bottom: 4px solid $colorPrimary;
                 }
