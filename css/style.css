@@ -326,4 +326,57 @@ main {
   color: rgba(0, 0, 0, 0.397);
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+}
+.footer__header {
+  display: flex;
+  flex-direction: column;
+  align-items: auto;
+  justify-content: auto;
+  margin-right: 10rem;
+}
+.footer__text, .footer__listGroup__list--link, .footer__text--link {
+  color: rgba(0, 0, 0, 0.582);
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.2rem;
+}
+.footer__text--link {
+  text-decoration: none;
+}
+.footer__text--link:hover {
+  text-decoration: underline;
+}
+.footer__text--point {
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0 3px;
+}
+.footer__listGroup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer__listGroup__div {
+  display: flex;
+  flex-direction: column;
+  align-items: auto;
+  justify-content: auto;
+}
+.footer__listGroup__div--one {
+  gap: 1.5rem;
+}
+.footer__listGroup__list {
+  padding: 0.5rem 0;
+}
+.footer__listGroup__list--link {
+  text-decoration: none;
+}
+.footer__listGroup__list--link:hover {
+  color: rgba(0, 0, 0, 0.658);
+}
+
 /*# sourceMappingURL=style.css.map */
