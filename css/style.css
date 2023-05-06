@@ -167,6 +167,11 @@ meter {
   }
 }
 
+.icon {
+  color: #004beb;
+  font-size: 4rem;
+}
+
 .listGroup {
   display: flex;
   flex-direction: column;
@@ -317,6 +322,28 @@ main {
 }
 .section__web3__button--text {
   margin-bottom: 0;
+}
+
+.moonBanner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f8ff;
+}
+.moonBanner__textGroup {
+  width: 25rem;
+  margin-left: 25rem;
+}
+.moonBanner__textGroup--title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.moonBanner__textGroup--text {
+  font-weight: 600;
+}
+.moonBanner__figure {
+  width: 40%;
 }
 
 .aside {

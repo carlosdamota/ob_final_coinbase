@@ -58,6 +58,25 @@ main {
         }
     }
 }
+.moonBanner {
+    @include flexBox (row, center, space-between);
+    background-color: #f5f8ff;
+    &__textGroup {
+        width: 25rem;
+        margin-left: 25rem;
+        &--title {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        &--text {
+            font-weight: 600;
+        }
+    }
+    &__figure {
+        width: 40%;
+    }
+
+}
 .aside {
     margin-top: 5rem;
     margin-bottom: 5rem;
