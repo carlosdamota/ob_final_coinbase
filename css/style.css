@@ -167,9 +167,19 @@ meter {
   }
 }
 
-.icon {
+.article__icon {
+  width: 3rem;
+  height: 3rem;
+  box-shadow: rgba(218, 225, 233, 0.557) 0px 8px 16px;
+  border-radius: 50%;
+}
+
+.icon, .icon--rounded {
   color: #004beb;
   font-size: 4rem;
+}
+.icon--rounded {
+  font-size: 2rem;
 }
 
 .listGroup {

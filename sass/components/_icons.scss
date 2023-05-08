@@ -1,4 +1,14 @@
+.article__icon{
+    width: 3rem;
+    height: 3rem;
+    box-shadow: rgba(218, 225, 233, 0.557) 0px 8px 16px;
+    border-radius: 50%;
+}
 .icon {
     color: $colorPrimary;
     font-size: 4rem;
+    &--rounded {
+        @extend .icon;
+        font-size: 2rem;
+    }
 }
