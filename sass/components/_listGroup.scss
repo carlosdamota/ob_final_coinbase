@@ -1,10 +1,13 @@
 .listGroup {
-    @include flexBox(column,stretch,center);
+    @include flexBox(column,auto,center);
+    
     &__item {
         @include flexBox(row,center,space-between);
-        border-radius: 1rem;
+        border-radius: 0.5rem;
+        padding: 1rem;
         &:hover {
-            box-shadow: 0.5rem 0.5rem 2rem
+            box-shadow: 0.5rem 0.5rem 2rem;
+            cursor: pointer;
         }
         @media (max-width: 720px) {
             border-radius: 0;
@@ -15,5 +18,15 @@
     }
     &__coin {
         @include flexBox (row,center,flex-start);
+        gap: 1rem;
+        &__title {
+            margin-bottom: 0;
+        }
+        &__price{
+            margin-bottom: 0;
+        }
+        &__init {
+            margin-bottom: 0;
+        }
     }
 }

@@ -1,3 +1,4 @@
+
 main {
     padding: 0;
 }
@@ -57,6 +58,40 @@ main {
             }
         }
     }
+    &__earn {
+        @include flexBox (row,center,auto);
+        gap: 2rem;
+        &__textGroup{
+            padding-right: 5rem;
+            width: 50%;
+            &__title {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+            &__text {
+                font-size: 1.1rem;
+                font-weight: 400;
+            }
+        }
+        &__listGroup {
+            width: 50%;
+        }
+    }
+    &__portfolio {
+        &--flex{
+            @include flexBox (row,center,center);
+        }
+        &--portfolioText {
+            width: 40%
+        }
+        &--figure {
+            width: 60%
+        }
+        &__characteristics {
+            @include flexBox (row,center,center);
+            gap: 1rem
+        }
+    }
 }
 .moonBanner {
     @include flexBox (row, center, space-between);
@@ -83,4 +118,5 @@ main {
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.397);
 }
+
 

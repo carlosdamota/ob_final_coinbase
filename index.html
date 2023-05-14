@@ -86,7 +86,7 @@
         </p>
     </aside>
     <section class="container section__table">
-        <table class="table">
+        <table class=" container table">
             <thead>
                 <tr>
                     <th class="table__head">#</th>
@@ -101,11 +101,12 @@
                 <tr>
                     <td class="table__row">1</td>
                     <td class="table__row table__row--name">
-                        <figure class="figure__coin">
+                        <div class="table__coin"><figure class="figure__coin">
                             <img class="figure__coin__logo" src="/assets/img/logo_bitcoin.png" alt="logo_bitcoin">
                         </figure>
                         <p class="table__row__coin">Bitcoin</p>
-                        <p class="table__row__initCoin">BTC</p>
+                        <p class="table__row__initCoin">BTC</p></div>
+                        
                     </td>
                     <td class="table__row">€27,66839</td>
                     <td class="table__row">-1.18%</td>
@@ -122,11 +123,14 @@
                 <tr>
                     <td class="table__row">2</td>
                     <td class="table__row table__row--name">
-                        <figure class="figure__coin">
+                        <div class="table__coin">
+                            <figure class="figure__coin">
                             <img class="figure__coin__logo" src="/assets/img/logo_solana.png" alt="logo solana">
                         </figure>
                         <p class="table__row__coin">Solana</p>
                         <p class="table__row__initCoin">SOL</p>
+                    </div>
+                    
                     </td>
                     <td class="table__row">€27,66839</td>
                     <td class="table__row">-1.18%</td>
@@ -143,11 +147,14 @@
                 <tr>
                     <td class="table__row">3</td>
                     <td class="table__row table__row--name">
-                        <figure class="figure__coin">
-                            <img class="figure__coin__logo" src="/assets/img/logo_etherum.png" alt="logo Etherum">
-                        </figure>
-                        <p class="table__row__coin">Etherum</p>
-                        <p class="table__row__initCoin">ETH</p>
+                        <div class="table__coin">
+                            <figure class="figure__coin">
+                                <img class="figure__coin__logo" src="/assets/img/logo_etherum.png" alt="logo Etherum">
+                            </figure>
+                            <p class="table__row__coin">Etherum</p>
+                            <p class="table__row__initCoin">ETH</p>
+                        </div>
+                        
                     </td>
                     <td class="table__row">€1,665.53</td>
                     <td class="table__row">-0.00%</td>
@@ -164,11 +171,13 @@
                 <tr>
                     <td class="table__row">4</td>
                     <td class="table__row table__row--name">
-                        <figure class="figure__coin">
+                        <div class="table__coin">
+                            <figure class="figure__coin">
                             <img class="figure__coin__logo" src="/assets/img/logo_cardano.png" alt="logo Cardano">
                         </figure>
                         <p class="table__row__coin">Cardano</p>
                         <p class="table__row__initCoin">ADA</p>
+                        </div>
                     </td>
                     <td class="table__row">€27,66839</td>
                     <td class="table__row">+6.56%</td>
@@ -232,45 +241,48 @@
                 </div>
                 <p class="listGroup__coin__price">Earn $3 NEAR</p>
             </div>
-            <a class="listGroup__link Button__link" href="#">View more ></a>
+            <a class="listGroup__link button--link" href="#">View more ></a>
         </div>
     </section>
     <section class="container section section__portfolio">
         <h2 class="section__title">Create your cryptocurrency portfolio today</h2>
-        <p class="section__text"></p>
-        <div class="section__portfolio--portfolioText">
-            <article article>
-                <span class="article__icon"><i class="icon--rounded bi bi-bar-chart-fill"></i></span>
-                <div class="article__portfolio">
-                    <h4 class="article__title">Manage your portfolio</h4>
-                    <p class="article__text">Buy and sell popular digital currencies, keep track of them in the one place.</p>
-                </div>
-            </article>
-            <article article>
-                <span class="article__icon"><i class="icon--rounded bi bi-calendar-check"></i></span>
-                <div class="article__portfolio">
-                    <h4 class="article__title">Recurring buys</h4>
-                    <p class="article__text">Invest in cryptocurrency slowly over time by scheduling buys daily, weekly, or monthly.</p>
-                </div>
-            </article>
-            <article article>
-                <span class="article__icon"><i class="icon--rounded bi bi-lock-fill"></i></span>
-                <div class="article__portfolio">
-                    <h4 class="article__title">Vault protection</h4>
-                    <p class="article__text">For added security, store your funds in a vault with time delayed withdrawals.</p>
-                </div>
-            </article>
-            <article article>
-                <span class="article__icon"><i class="icon--rounded bi bi-phone-fill"></i></span>
-                <div class="article__portfolio">
-                    <h4 class="article__title">Mobile apps</h4>
-                    <p class="article__text">Stay on top of the markets with the Coinbase app for Android or iOS.</p>
-                </div>
-            </article>
+        <p class="section__text">Coinbase has a variety of features that make it the best place to start trading</p>
+        <div class="section__portfolio--flex">
+            <div class="section__portfolio--portfolioText">
+                <article class="section__portfolio__characteristics">
+                    <span class="article__icon"><i class="icon--rounded bi bi-bar-chart-fill"></i></span>
+                    <div class="article__portfolio">
+                        <h4 class="article__title">Manage your portfolio</h4>
+                        <p class="article__text">Buy and sell popular digital currencies, keep track of them in the one place.</p>
+                    </div>
+                </article>
+                <article class="section__portfolio__characteristics">
+                    <span class="article__icon"><i class="icon--rounded bi bi-calendar-check"></i></span>
+                    <div class="article__portfolio">
+                        <h4 class="article__title">Recurring buys</h4>
+                        <p class="article__text">Invest in cryptocurrency slowly over time by scheduling buys daily, weekly, or
+                            monthly.</p>
+                    </div>
+                </article>
+                <article class="section__portfolio__characteristics">
+                    <span class="article__icon"><i class="icon--rounded bi bi-lock-fill"></i></span>
+                    <div class="article__portfolio">
+                        <h4 class="article__title">Vault protection</h4>
+                        <p class="article__text">For added security, store your funds in a vault with time delayed withdrawals.</p>
+                    </div>
+                </article>
+                <article class="section__portfolio__characteristics">
+                    <span class="article__icon"><i class="icon--rounded bi bi-phone-fill"></i></span>
+                    <div class="article__portfolio">
+                        <h4 class="article__title">Mobile apps</h4>
+                        <p class="article__text">Stay on top of the markets with the Coinbase app for Android or iOS.</p>
+                    </div>
+                </article>
+            </div>
+            <figure class="section__portfolio--figure figure__portfolio">
+                <img class="figure__img" src="/assets/img/coinbase_portfolio.webp" alt="portfolio coinbase">
+            </figure>
         </div>
-        <figure class="section__portfolio--figure figure">
-            <img class="figure__img" src="/assets/img/coinbase_portfolio.webp" alt="portfolio coinbase">
-        </figure>
     </section>
     <section class="container section features">
         <h2 class="feature__title">The most trusted cryptocurrency platform</h2>

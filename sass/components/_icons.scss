@@ -8,9 +8,9 @@
 .icon {
     text-align: center;
     color: $colorPrimary;
-    font-size: 4rem;
+    font-size: 5rem;
     &--rounded {
         @extend .icon;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }

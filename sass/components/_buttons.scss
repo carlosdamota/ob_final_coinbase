@@ -1,4 +1,5 @@
 .button{
+    border: none;
     @include buttons;
     &__login {
         &--signin {
@@ -16,10 +17,10 @@
         }
     &--hero {
         width: 40%;
-        padding: 1rem 2rem;
+        padding: 1.5rem 2rem;
         background-color: $colorPrimary;
         color: white;
-        font-size: 1.2rem;
+        font-size: 1rem;
         &:hover {
             background-color: $colorButton1;
         }
@@ -48,5 +49,12 @@
             width: 100%;
             
         }
+    }
+    &--link {
+        display: block;
+        text-decoration: none;
+        padding-left: 1rem;
+        font-weight: 500;
+        font-size: 1.2rem;
     }
 }   

@@ -1,0 +1,8 @@
+.table {
+    border: 1px gray solid;
+    border-radius: 1rem;
+    &__coin {
+        @include flexBox (row, baseline, auto);
+        gap: 1rem;
+    }
+}
