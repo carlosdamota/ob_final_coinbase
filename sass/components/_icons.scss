@@ -1,16 +1,16 @@
 .article__icon {
     @include flexBox (row, center, center);
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     box-shadow: rgba(218, 225, 233, 0.557) 0px 8px 16px;
     border-radius: 50%;
 }
 .icon {
     text-align: center;
     color: $colorPrimary;
-    font-size: 5rem;
+    font-size: 4rem;
     &--rounded {
         @extend .icon;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 }

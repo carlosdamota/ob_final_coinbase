@@ -11,3 +11,9 @@
     font-size: 1rem;
     font-weight: 600;
 }
+@mixin textStyle ($color: inherit, $fontWeight:400, $fonSize:1rem) {
+    color: $color;
+    font-weight: $fontWeight;
+    font-size: $fonSize;
+
+}
