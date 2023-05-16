@@ -446,14 +446,29 @@ main {
 .section__earn__listGroup {
   width: 50%;
 }
-.section__portfolio--flex {
+.section__portfolio {
+  margin-top: 4rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.section__portfolio--flex {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: auto;
+}
 .section__portfolio--portfolioText {
+  display: flex;
+  flex-direction: column;
+  align-items: auto;
+  justify-content: auto;
+  gap: 2rem;
   width: 40%;
+  margin-right: 1rem;
 }
 .section__portfolio--figure {
   width: 60%;
@@ -461,9 +476,31 @@ main {
 .section__portfolio__characteristics {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  align-items: auto;
+  justify-content: auto;
+  gap: 2rem;
+}
+.section__portfolio__article {
+  width: 80%;
+}
+.section__portfolio__article--title {
+  color: auto;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.section__portfolio__article--text {
+  color: rgba(0, 0, 0, 0.486);
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+.section__hr {
+  color: rgba(0, 0, 0, 0.486);
+}
+
+.features {
+  margin-top: 5rem;
 }
 
 .moonBanner {

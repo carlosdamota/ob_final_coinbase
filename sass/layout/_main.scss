@@ -71,20 +71,47 @@ main {
         }
     }
     &__portfolio {
+        margin-top: 4rem;
+        @include flexBox (column, center, center);
         &--flex{
-            @include flexBox (row,center,center);
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            @include flexBox (row,center,auto);
         }
         &--portfolioText {
-            width: 40%
+            @include flexBox (column,auto, auto);
+            gap: 2rem;
+            width: 40%;
+            margin-right: 1rem;
         }
         &--figure {
             width: 60%
         }
         &__characteristics {
-            @include flexBox (row,center,center);
-            gap: 1rem
+            @include flexBox (row,auto,auto);
+            gap: 2rem
+
+        }
+        &__article {
+           width: 80%;
+           &--title {
+            @include textStyle (auto, 500, 1.5rem);
+            margin-bottom: 1rem;
+           }
+           &--text {
+            @include textStyle ($colorText, 400, 1.3rem);
+            line-height: 1.6;
+           }
         }
     }
+    &__hr {
+        color: $colorText;
+    }
+}
+
+.features {
+    margin-top: 5rem;
+    
 }
 .moonBanner {
     @include flexBox (row, center, space-between);
