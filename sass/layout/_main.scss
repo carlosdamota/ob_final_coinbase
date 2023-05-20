@@ -10,12 +10,18 @@ main {
         &__textGroup {
             @include flexBox (column, flex-start, center);
             margin-right: 2rem;
+            &--link {
+                @include flexBox (row,center,center);
+                gap: 0.5rem;
+                text-decoration: none;
+                @include textStyle ($colorPrimary, 500, 1.2rem)
+            }
             &__title {
                 width: 70%;
-                @include textStyle (auto, 600, 4rem);
+                @include textStyle (auto, 500, 4.2rem);
             }
             &__text {
-                @include textStyle (auto, 600, 1.5rem);
+                @include textStyle (auto, 500, 1.4rem);
             }               
         }
     }
@@ -107,11 +113,30 @@ main {
     &__hr {
         color: $colorText;
     }
+    &__kpi {
+        background-color: $colorPrimary;
+        @include flexBox (row,center,space-evenly);
+        &--stats{
+            @include flexBox (column, center, center);
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        &--titleText {
+            @include textStyle ($colorWhite, 500, 4rem);
+        }
+        &--text {
+             @include textStyle ($colorText, 500, 1.2rem);
+        }
+    }
 }
 
 .features {
+    @include flexBox (column,center,center);
     margin-top: 5rem;
-    
+    &__cards {
+        @include flexBox (row,center,center);
+    }
+
 }
 .moonBanner {
     @include flexBox (row, center, space-between);
@@ -121,8 +146,6 @@ main {
         margin-left: 25rem;
         &--title {
             @include textStyle (auto, 600, 2rem);
-            // font-size: 2rem;
-            // font-weight: 600;
         }
         &--text {
             @include textStyle ($colorText, 600, auto);

@@ -213,6 +213,23 @@ table {
   gap: 1rem;
 }
 
+.section__hero__textGroup__icon--rounded {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #004beb;
+}
+.section__hero__textGroup__icon--bitcoin {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1rem;
+  transform: skewX(-15deg);
+}
+
 .article__icon {
   display: flex;
   flex-direction: row;
@@ -294,9 +311,33 @@ table {
   border: 3px solid black;
 }
 
-.card {
-  width: 30%;
+.feature__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
   border: none;
+  text-align: center;
+  margin: 5rem 2rem 5rem;
+}
+.feature__card--title {
+  color: auto;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+.feature__card--text {
+  color: #a7a7a7;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 1rem 0 5rem;
+}
+.feature__card--link {
+  color: #004beb;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 .figure__coin {
@@ -369,16 +410,27 @@ main {
   justify-content: center;
   margin-right: 2rem;
 }
+.section__hero__textGroup--link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #004beb;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
 .section__hero__textGroup__title {
   width: 70%;
   color: auto;
-  font-weight: 600;
-  font-size: 4rem;
+  font-weight: 500;
+  font-size: 4.2rem;
 }
 .section__hero__textGroup__text {
   color: auto;
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.4rem;
 }
 .section__web3 {
   display: flex;
@@ -490,17 +542,52 @@ main {
   margin-bottom: 1rem;
 }
 .section__portfolio__article--text {
-  color: rgba(0, 0, 0, 0.486);
+  color: #a7a7a7;
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.6;
 }
 .section__hr {
-  color: rgba(0, 0, 0, 0.486);
+  color: #a7a7a7;
+}
+.section__kpi {
+  background-color: #004beb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section__kpi--stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.section__kpi--titleText {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 4rem;
+}
+.section__kpi--text {
+  color: #a7a7a7;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 5rem;
+}
+.features__cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .moonBanner {
@@ -520,7 +607,7 @@ main {
   font-size: 2rem;
 }
 .moonBanner__textGroup--text {
-  color: rgba(0, 0, 0, 0.486);
+  color: #a7a7a7;
   font-weight: 600;
   font-size: auto;
 }
@@ -531,7 +618,7 @@ main {
 .aside {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  color: rgba(0, 0, 0, 0.486);
+  color: #a7a7a7;
   font-weight: auto;
   font-size: 0.9rem;
 }

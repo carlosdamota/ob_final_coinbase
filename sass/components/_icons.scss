@@ -1,3 +1,17 @@
+.section__hero__textGroup__icon{
+    &--rounded {
+        @include flexBox (row,center,center);
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 50%;
+            background-color: $colorPrimary
+        }
+    &--bitcoin {
+        @include textStyle ($colorWhite, 400, 1rem);
+        transform: skewX(-15deg);
+    }
+}
+
 .article__icon {
     @include flexBox (row, center, center);
     width: 5rem;
