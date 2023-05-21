@@ -15,5 +15,8 @@
     color: $color;
     font-weight: $fontWeight;
     font-size: $fonSize;
+}
 
+@mixin responsive ($media) {
+    @media #
 }

@@ -14,7 +14,7 @@ main {
                 @include flexBox (row,center,center);
                 gap: 0.5rem;
                 text-decoration: none;
-                @include textStyle ($colorPrimary, 500, 1.2rem)
+                @include textStyle ($colorPrimary, 500, 1.2rem);
             }
             &__title {
                 width: 70%;
@@ -114,6 +114,7 @@ main {
         color: $colorText;
     }
     &__kpi {
+        margin-bottom: 5rem;
         background-color: $colorPrimary;
         @include flexBox (row,center,space-evenly);
         &--stats{
@@ -123,10 +124,35 @@ main {
         }
         &--titleText {
             @include textStyle ($colorWhite, 500, 4rem);
+            margin: 0;
+            padding: 0rem;
         }
         &--text {
              @include textStyle ($colorText, 500, 1.2rem);
+             margin: 0;
         }
+    }
+    &__started {
+        @include flexBox (column, center, center);
+        &--title {
+            @include textStyle (auto, 500, 2.8rem)
+        }
+        &--text {
+            @include textStyle ($colorText,auto,auto);
+            padding-top: 1rem;
+        }
+        &__proces {
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+            @include flexBox (row, center, center);
+            text-align: center;
+            gap: 2rem;
+            &--separator {
+                display: block;
+                width: 10rem;
+            }
+        }
+
     }
 }
 
