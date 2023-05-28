@@ -1,6 +1,9 @@
 .form {
     @include flexBox (row,auto,auto);
     width: 100%;
+    @include resDesign(530px){
+        @include flexBox (column, auto,stretch)
+    }
 }
 .form__input {
     border: 1px solid black;
@@ -8,7 +11,9 @@
     border-radius: $b-radius;
     padding: 1.5rem;
     width: 60%;
-
+    @include resDesign(530px) {
+            width: 100%;
+        }
     &:focus-within {
         border: 3px solid black;
     }

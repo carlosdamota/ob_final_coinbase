@@ -17,6 +17,8 @@
     font-size: $fonSize;
 }
 
-@mixin responsive ($media) {
-    @media #
+@mixin resDesign ($media : 560px) {
+    @media screen and (max-width: $media) {
+        @content;
+    }
 }

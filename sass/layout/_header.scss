@@ -2,6 +2,10 @@
     @include flexBox (row, center, space-evenly);
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.144);
     padding: 1rem;
+    position: fixed;
+    background-color: white;
+        top: 0;
+        width: 100%;
     &__figure {
         margin-bottom: 0;
     }

@@ -24,6 +24,9 @@
         &:hover {
             background-color: $colorButton1;
         }
+                @include resDesign(530px) {
+                    width: 100%;
+                }
     }
     &--buy {
         background-color: $colorButton4H;

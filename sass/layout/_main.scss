@@ -165,20 +165,46 @@ main {
 
 }
 .moonBanner {
-    @include flexBox (row, center, space-between);
+    @include flexBox (row, auto, auto);
     background-color: #f5f8ff;
+    position: relative;
+    overflow: hidden;
+    flex: 1 0 auto;
+    height: 460px;
+    width: 100%;
+    @include resDesign(769px) {
+            background-color: #135;
+            color: white;
+            height: auto;
+        }
+    
     &__textGroup {
-        width: 25rem;
-        margin-left: 25rem;
+        &--position {
+            @include flexBox(row,center,center);
+            flex: 1 1 50%;
+            width: 100%;
+            padding-left: 5rem;
+            @include resDesign(769px) {
+                padding: 3rem 12rem;
+                text-align: center;
+            }
+        }
+        @include flexBox (column,flex-start,center);
         &--title {
             @include textStyle (auto, 600, 2rem);
         }
         &--text {
-            @include textStyle ($colorText, 600, auto);
+            @include textStyle (auto, 400, auto);
+        }
+        @include resDesign(769px) {
+            @include flexBox (column, center, center);
         }
     }
     &__figure {
-        width: 40%;
+        width: 100%;
+        @include resDesign(769px) {
+                display: none;
+            }
     }
 
 }

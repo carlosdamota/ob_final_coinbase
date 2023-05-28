@@ -3,6 +3,9 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 100%;
+    @include resDesign (769px) {
+        grid-template-columns: 1fr;
+    }
     &__header {
         @include flexBox (column,auto,auto);
         margin-right: 10rem;
@@ -11,7 +14,7 @@
         color: rgba(0, 0, 0, 0.582);
         font-weight: 400;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1rem;
         &--link {
             @extend .footer__text;
             text-decoration: none;
@@ -29,6 +32,15 @@
     &__listGroup {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        @include resDesign (769px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include resDesign (560px) {
+        grid-template-columns: repeat(1, 1fr);
+        }
+        &__Title {
+             @include textStyle (auto, 500, 1rem);
+        }
         &__div {
             @include flexBox (column, auto, auto);
             &--one {
@@ -43,6 +55,7 @@
                 &:hover {
                     color: rgba(0, 0, 0, 0.658);
                 }
+            
             }
         }
     }
