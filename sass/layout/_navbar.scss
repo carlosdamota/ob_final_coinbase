@@ -9,6 +9,9 @@
             &:hover {
                     border-bottom: 4px solid $colorPrimary;
                 }
+                @include resDesign (1050px) {
+                    display: none;
+                }
         }
         
     }

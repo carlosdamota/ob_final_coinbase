@@ -4,10 +4,10 @@
     align-items: $valor2;
     justify-content: $valor3;
 }
-@mixin buttons {
+@mixin buttons ($radius : $b-radius) {
     padding: 0.5rem 1rem;
     text-align: center;
-    border-radius: $b-radius;
+    border-radius: $radius;
     font-size: 1rem;
     font-weight: 600;
 }

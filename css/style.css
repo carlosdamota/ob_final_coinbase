@@ -145,18 +145,26 @@ table {
   font-size: 1rem;
   font-weight: 600;
 }
+.button__login--signin {
+  background-color: transparent;
+}
 .button__login--signin:hover {
   color: #0052FF;
 }
+@media screen and (max-width: 1050px) {
+  .button__login--signin {
+    display: none;
+  }
+}
 .button__login--getstarted {
   background-color: #0052FF;
+  border-radius: 2rem;
   color: white;
 }
 .button__login--getstarted:hover {
   background-color: #004beb;
 }
 .button--hero {
-  width: 40%;
   padding: 1.5rem 2rem;
   background-color: #004beb;
   color: white;
@@ -310,6 +318,18 @@ table {
     flex-direction: column;
     align-items: auto;
     justify-content: stretch;
+    font-size: 0.9rem;
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    justify-content: stretch;
+    font-size: 1rem;
+    gap: 0.5rem;
   }
 }
 
@@ -368,7 +388,9 @@ table {
 }
 
 .figure__hero {
-  width: 32rem;
+  margin: 0;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 @media screen and (max-width: 769px) {
   .figure__hero {
@@ -389,6 +411,7 @@ table {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  width: 100wv;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.144);
   padding: 1rem;
   position: fixed;
@@ -415,6 +438,11 @@ table {
 .navbar__list--items:hover {
   border-bottom: 4px solid #004beb;
 }
+@media screen and (max-width: 1050px) {
+  .navbar__list--items {
+    display: none;
+  }
+}
 
 main {
   padding: 0;
@@ -424,6 +452,7 @@ main {
   margin: 2rem auto;
 }
 .section__hero {
+  margin-left: 0;
   margin: 4rem auto;
   display: flex;
   flex-direction: row;
@@ -446,18 +475,29 @@ main {
   text-decoration: none;
   color: #004beb;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .section__hero__textGroup__title {
-  width: 70%;
   color: auto;
   font-weight: 500;
-  font-size: 4.2rem;
+  font-size: 4rem;
+}
+@media screen and (max-width: 560px) {
+  .section__hero__textGroup__title {
+    font-size: 3rem;
+  }
 }
 .section__hero__textGroup__text {
   color: auto;
   font-weight: 500;
   font-size: 1.4rem;
+}
+@media screen and (max-width: 560px) {
+  .section__hero__textGroup__text {
+    color: auto;
+    font-weight: 400;
+    font-size: 1rem;
+  }
 }
 .section__web3 {
   display: flex;
@@ -466,6 +506,7 @@ main {
   justify-content: center;
   width: 100wv;
   background-color: #0a0b0d;
+  padding: 0;
 }
 .section__web3__figure {
   align-self: center;
@@ -476,22 +517,36 @@ main {
 .section__web3__figure__img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
 }
 .section__web3__textGroup {
   color: white;
-  padding: 1.5rem 4rem 1rem 3rem;
+  padding: 1.5rem 0rem 1rem 3rem;
 }
 .section__web3__textGroup__title {
   color: auto;
   font-weight: 400;
-  font-size: 3.5rem;
+  font-size: 2.6rem;
+}
+@media screen and (max-width: 768px) {
+  .section__web3__textGroup__title {
+    font-size: 1.8rem;
+  }
 }
 .section__web3__textGroup__text {
   color: auto;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.3rem;
-  padding-right: 10rem;
+  padding-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .section__web3__textGroup__text {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section__web3__textGroup {
+    padding-left: 2rem;
+  }
 }
 .section__web3__button {
   color: auto;

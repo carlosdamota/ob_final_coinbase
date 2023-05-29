@@ -5,6 +5,7 @@ main {
 .section {
     margin: 2rem auto;
     &__hero {
+        margin-left: 0;
         margin: 4rem auto;
         @include flexBox (row,center,center);
         &__textGroup {
@@ -14,14 +15,19 @@ main {
                 @include flexBox (row,center,center);
                 gap: 0.5rem;
                 text-decoration: none;
-                @include textStyle ($colorPrimary, 500, 1.2rem);
+                @include textStyle ($colorPrimary, 500, 1.1rem);
             }
             &__title {
-                width: 70%;
-                @include textStyle (auto, 500, 4.2rem);
+                @include textStyle (auto, 500, 4rem);
+                @include resDesign (560px) {
+                        font-size: 3rem;
+                    }
             }
             &__text {
                 @include textStyle (auto, 500, 1.4rem);
+                @include resDesign (560px) {
+                        @include textStyle (auto, 400, 1rem);
+                    }
             }               
         }
     }
@@ -29,6 +35,7 @@ main {
         @include flexBox (row,center,center);
         width: 100wv;
         background-color: $colorWeb3;
+        padding: 0;
         &__figure {
             align-self: center;
             margin-bottom: 0;
@@ -37,19 +44,29 @@ main {
             &__img{
                 object-fit: cover;
                 width: 100%;
-                height: 100%;
+                // height: 100%;
             }
         }
         &__textGroup {
             color: white;
-            padding: 1.5rem 4rem 1rem 3rem;
+            padding: 1.5rem 0rem 1rem 3rem;
             &__title {
-                @include textStyle (auto, 400, 3.5rem);
+                @include textStyle (auto, 400, 2.6rem);
+                @include resDesign (768px) {
+                        font-size: 1.8rem;
+                    }
             }
             &__text {
-                @include textStyle (auto, 500, 1.3rem);
-                padding-right: 10rem;
-            } 
+                @include textStyle (auto, 400, 1.3rem);
+                padding-right: 0;
+                @include resDesign (768px) {
+                        font-size: 0.9rem;
+                    }
+            }
+            @include resDesign (768px) {
+                padding-left: 2rem;
+            }
+     
         }
 
         &__button {

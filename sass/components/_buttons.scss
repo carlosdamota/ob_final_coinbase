@@ -3,12 +3,17 @@
     @include buttons;
     &__login {
         &--signin {
+            background-color: transparent;
             &:hover {
                 color: $colorButton1;
+            }
+            @include resDesign (1050px) {
+                display: none;
             }
         }
         &--getstarted {
             background-color: $colorButton1;
+            border-radius: 2rem;
             color: white;
                 &:hover {
                     background-color: $colorPrimary;
@@ -16,7 +21,7 @@
             }
         }
     &--hero {
-        width: 40%;
+        // width: 40%;
         padding: 1.5rem 2rem;
         background-color: $colorPrimary;
         color: white;

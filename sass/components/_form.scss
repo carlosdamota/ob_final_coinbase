@@ -2,8 +2,15 @@
     @include flexBox (row,auto,auto);
     width: 100%;
     @include resDesign(530px){
-        @include flexBox (column, auto,stretch)
+        @include flexBox (column, auto,stretch);
+        font-size: 0.9rem;
+        gap: 0.5rem;
     }
+        @include resDesign(560px) {
+            @include flexBox (column, auto, stretch);
+            font-size: 1rem;
+            gap: 0.5rem;
+        }
 }
 .form__input {
     border: 1px solid black;
