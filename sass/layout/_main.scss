@@ -107,6 +107,9 @@ main {
             margin-top: 5rem;
             margin-bottom: 5rem;
             @include flexBox (row,center,auto);
+                @include resDesign (1170px) {
+                    @include flexBox (column-reverse, center, auto);
+                }
         }
         &--portfolioText {
             @include flexBox (column,auto, auto);
@@ -133,6 +136,7 @@ main {
             line-height: 1.6;
            }
         }
+
 
     }
     &__hr {

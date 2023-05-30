@@ -614,6 +614,14 @@ main {
   align-items: center;
   justify-content: auto;
 }
+@media screen and (max-width: 1170px) {
+  .section__portfolio--flex {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: auto;
+  }
+}
 .section__portfolio--portfolioText {
   display: flex;
   flex-direction: column;
