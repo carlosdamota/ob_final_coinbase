@@ -4,14 +4,17 @@
     border: none;
     text-align: center;
     
-    margin: 5rem 2rem 5rem;
+    // margin: 7rem auto;
     &--title {
         @include textStyle (auto,500,1.4rem);
         margin-top: 1.5rem;
     }
     &--text {
-        @include textStyle ($colorText,500, 1.2rem);
+        @include textStyle ($colorText,400, 1rem);
         margin: 1rem 0 5rem;
+            @include resDesign (945px) {
+                margin-bottom: 2rem
+            }
     }
     &--link {
         @include textStyle ($colorPrimary, 500, 1rem);
