@@ -143,7 +143,12 @@ table {
   text-align: center;
   border-radius: 0.3rem;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
+}
+@media screen and (max-width: 992px) {
+  .button {
+    font-size: 0.9;
+  }
 }
 .button__login--signin {
   background-color: transparent;
@@ -165,7 +170,8 @@ table {
   background-color: #004beb;
 }
 .button--hero {
-  padding: 1.5rem 2rem;
+  width: 100%;
+  padding: 1.5rem;
   background-color: #004beb;
   color: white;
   font-size: 1rem;
@@ -173,9 +179,9 @@ table {
 .button--hero:hover {
   background-color: #0052FF;
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 992px) {
   .button--hero {
-    width: 100%;
+    font-size: 0.6;
   }
 }
 .button--buy {
@@ -264,6 +270,7 @@ table {
 }
 
 .listGroup {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: auto;
@@ -281,7 +288,7 @@ table {
   box-shadow: 0.5rem 0.5rem 2rem;
   cursor: pointer;
 }
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .listGroup__item {
     border-radius: 0;
     border: solid 1px rgba(0, 0, 0, 0.233);
@@ -338,12 +345,7 @@ table {
   margin-right: 1rem;
   border-radius: 0.3rem;
   padding: 1.5rem;
-  width: 60%;
-}
-@media screen and (max-width: 530px) {
-  .form__input {
-    width: 100%;
-  }
+  width: 100%;
 }
 .form__input:focus-within {
   border: 3px solid black;
@@ -449,11 +451,11 @@ main {
 }
 
 .section {
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 .section__hero {
   margin-left: 0;
-  margin: 4rem auto;
+  margin: 5rem auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -484,7 +486,7 @@ main {
 }
 @media screen and (max-width: 560px) {
   .section__hero__textGroup__title {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 }
 .section__hero__textGroup__text {
@@ -561,11 +563,11 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: auto;
-  gap: 2rem;
+  gap: 5rem;
 }
 .section__earn__textGroup {
-  padding-right: 5rem;
-  width: 50%;
+  padding: 2rem;
+  width: 100%;
 }
 .section__earn__textGroup__title {
   color: auto;
@@ -577,8 +579,25 @@ main {
   font-weight: 400;
   font-size: 1.1rem;
 }
+@media screen and (max-width: 768px) {
+  .section__earn__textGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: auto;
+    text-align: center;
+  }
+}
 .section__earn__listGroup {
-  width: 50%;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .section__earn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .section__portfolio {
   margin-top: 4rem;
@@ -601,11 +620,11 @@ main {
   align-items: auto;
   justify-content: auto;
   gap: 2rem;
-  width: 40%;
+  width: 100%;
   margin-right: 1rem;
 }
 .section__portfolio--figure {
-  width: 60%;
+  width: 100%;
 }
 .section__portfolio__characteristics {
   display: flex;

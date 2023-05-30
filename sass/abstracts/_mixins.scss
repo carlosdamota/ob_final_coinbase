@@ -9,7 +9,10 @@
     text-align: center;
     border-radius: $radius;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
+    @include resDesign (992px) {
+        font-size: 0.9;
+    }
 }
 @mixin textStyle ($color: inherit, $fontWeight:400, $fonSize:1rem) {
     color: $color;

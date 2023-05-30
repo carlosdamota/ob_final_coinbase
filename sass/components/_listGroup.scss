@@ -1,4 +1,5 @@
 .listGroup {
+    width: 100%;
     @include flexBox(column,auto,center);
     
     &__item {
@@ -9,7 +10,7 @@
             box-shadow: 0.5rem 0.5rem 2rem;
             cursor: pointer;
         }
-        @media (max-width: 720px) {
+        @media (max-width: 768px) {
             border-radius: 0;
             border: solid 1px  rgba(0, 0, 0, 0.233);
             box-shadow: none;

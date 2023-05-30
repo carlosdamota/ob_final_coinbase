@@ -21,16 +21,16 @@
             }
         }
     &--hero {
-        // width: 40%;
-        padding: 1.5rem 2rem;
+        width: 100%;
+        padding: 1.5rem;
         background-color: $colorPrimary;
         color: white;
         font-size: 1rem;
         &:hover {
             background-color: $colorButton1;
         }
-                @include resDesign(530px) {
-                    width: 100%;
+                @include resDesign(992px) {
+                    font-size: 0.6;
                 }
     }
     &--buy {

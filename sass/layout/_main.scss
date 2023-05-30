@@ -3,10 +3,10 @@ main {
     padding: 0;
 }
 .section {
-    margin: 2rem auto;
+    margin: 4rem auto;
     &__hero {
         margin-left: 0;
-        margin: 4rem auto;
+        margin: 5rem auto;
         @include flexBox (row,center,center);
         &__textGroup {
             @include flexBox (column, flex-start, center);
@@ -20,7 +20,7 @@ main {
             &__title {
                 @include textStyle (auto, 500, 4rem);
                 @include resDesign (560px) {
-                        font-size: 3rem;
+                        font-size: 2.2rem;
                     }
             }
             &__text {
@@ -78,19 +78,26 @@ main {
     }
     &__earn {
         @include flexBox (row,center,auto);
-        gap: 2rem;
+        gap: 5rem;
         &__textGroup{
-            padding-right: 5rem;
-            width: 50%;
+            padding: 2rem;
+            width: 100%;
             &__title {
                 @include textStyle (auto, 500, 2rem);
             }
             &__text {
                 @include textStyle (auto, 400, 1.1rem);
             }
+            @include resDesign (768px) {
+                @include flexBox (column, center, auto);
+                text-align: center;
+            }
         }
         &__listGroup {
-            width: 50%;
+            width: 100%;
+        }
+        @include resDesign (768px) {
+            @include flexBox (column,center,center);
         }
     }
     &__portfolio {
@@ -104,11 +111,11 @@ main {
         &--portfolioText {
             @include flexBox (column,auto, auto);
             gap: 2rem;
-            width: 40%;
+            width: 100%;
             margin-right: 1rem;
         }
         &--figure {
-            width: 60%
+            width: 100%
         }
         &__characteristics {
             @include flexBox (row,auto,auto);
@@ -126,6 +133,7 @@ main {
             line-height: 1.6;
            }
         }
+
     }
     &__hr {
         color: $colorText;
