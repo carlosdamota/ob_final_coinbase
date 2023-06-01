@@ -1,8 +1,32 @@
 .table {
     border: 1px gray solid;
     border-radius: 1rem;
+    width: 100%;
     &__coin {
-        @include flexBox (row, baseline, auto);
+        @include flexBox (row, center, flex-start);
         gap: 1rem;
+            @include resDesign (768px) {
+                @include flexBox (row, stretch, flex-start);
+                    }
+        &--text {
+            @include resDesign (768px) {
+                @include flexBox (column, flex-start, center);
+                gap: 0;
+
+            }
+        }
+
+    }
+    &__head, &__row--resDesign {
+        @include resDesign (768px) {
+            display: none;
+        }
+    }
+    @include resDesign (768px) {
+        border: none;
+        border-top: 1px gray solid;
+    }
+    &__row__coin, &__row__initCoin {
+        margin-bottom: 0;
     }
 }
