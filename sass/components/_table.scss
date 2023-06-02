@@ -29,4 +29,20 @@
     &__row__coin, &__row__initCoin {
         margin-bottom: 0;
     }
-}
+    &__row {
+        &--column {
+            @include flexBox (column,flex-end,center);
+        }
+        &--text {
+            margin: 0;
+        }
+        &--none {
+            color: red;
+            @media (min-width: 769px) {
+                display: none;
+            }
+                
+            }
+        }
+    }
+

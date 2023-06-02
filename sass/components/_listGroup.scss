@@ -20,14 +20,22 @@
     &__coin {
         @include flexBox (row,center,flex-start);
         gap: 1rem;
+
+
         &__title {
             margin-bottom: 0;
+            @include textStyle (auto, 500, 1);
+            width: min-content;
         }
         &__price{
             margin-bottom: 0;
+            @include textStyle ($colorButton4,500,1.1);
         }
         &__init {
             margin-bottom: 0;
+            @include resDesign (768px) {
+                display: none;
+            }
         }
     }
 }

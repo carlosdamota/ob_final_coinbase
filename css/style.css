@@ -263,6 +263,23 @@ table {
 .table__row__coin, .table__row__initCoin {
   margin-bottom: 0;
 }
+.table__row--column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.table__row--text {
+  margin: 0;
+}
+.table__row--none {
+  color: red;
+}
+@media (min-width: 769px) {
+  .table__row--none {
+    display: none;
+  }
+}
 
 .section__hero__textGroup__icon--rounded {
   display: flex;
@@ -336,12 +353,24 @@ table {
 }
 .listGroup__coin__title {
   margin-bottom: 0;
+  color: auto;
+  font-weight: 500;
+  font-size: 1;
+  width: min-content;
 }
 .listGroup__coin__price {
   margin-bottom: 0;
+  color: #098551;
+  font-weight: 500;
+  font-size: 1.1;
 }
 .listGroup__coin__init {
   margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .listGroup__coin__init {
+    display: none;
+  }
 }
 
 .form {
